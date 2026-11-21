@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.sclive" name="Stream Cinema Live" version="1.0.0" provider-name="Tadeáš Mucha">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.25.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="cs_CZ">Stream Cinema Live – vyrobil Tadeáš Mucha</summary>
+        <description lang="cs_CZ">Doplněk pro Kodi ve stylu SCC s podporou Webshare VIP Gold. Vyrobil Tadeáš Mucha.</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+<addon id="repository.sclive" name="Stream Cinema Live Repo" version="1.0.0" provider-name="Tadeáš Mucha">
+    <extension point="xbmc.addon.repository" name="Stream Cinema Live Repo">
+        <dir>
+            <info compressed="false">https://muchatadeas29-boop.github.io/sclive/addons.xml</info>
+            <checksum>https://muchatadeas29-boop.github.io/sclive/addons.xml.md5</checksum>
+            <datadir zip="true">https://muchatadeas29-boop.github.io/sclive/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="cs_CZ">Repozitář pro Stream Cinema Live – vyrobil Tadeáš Mucha</summary>
+        <description lang="cs_CZ">Repozitář doplňku Stream Cinema Live. Vyrobil Tadeáš Mucha.</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+</addons>
